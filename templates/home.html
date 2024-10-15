@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ATDT</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">ATDT</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">ATDT</a></li>
+          <li><a href="#about">Kafedra haqida</a></li>
+          <li><a href="#news">Yangiliklar</a></li>
+          <li><a href="#services">Talabalar</a></li>
+          <li><a href="#portfolio">Rasmlar</a></li>
+          <li><a href="#team">Faxriylar</a></li>
+          <li class="dropdown"><a href="#"><span>Hujjatlar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Sillabus</a></li>
+              <li class="dropdown"><a href="#"><span>Ilmiy maqolalar</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Xorijiy jurnallar</a></li>
+                  <li><a href="#">Konferensiyalar</a></li>
+                  <li><a href="#">OAK</a></li>
+                  <li><a href="#">Scopus, Web of Scince</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Mualliflik guvohnomalari</a></li>
+              <li><a href="#">O'quv qo'llanma</a></li>
+              <li><a href="#">Darsliklar</a></li>
+              <li><a href="#">Adabiyotlar</a></li>
+              <li><a href="#">Boshqa hujjatlar</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Axborot texnologiyalarining dasturiy ta’minoti</h2>
+            <p class="animate__animated animate__fadeInUp">Axborot texnologiyalarining dasturiy ta’minoti kafedrasi o‘z faoliyatini 2005 yil avgust oyida Vazirlar mahkamasining qarori va TATU rektorining shu yilning 17-avgustidagi 147/01 buyrug‘iga asosan ish faoliyatini boshladi.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Batafsil</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Axborot texnologiyalarining dasturiy ta’minoti</h2>
+            <p class="animate__animated animate__fadeInUp">  2005-2010 yillarda kafedraga t.f.d, akademik, M.M.Kamilov, 2010-2014 yillarda t.f.d. A.X.Nishanov va f.-m.f.n. A.T.Rahmonov, 2014-2016 yillarda t.f.d. B.B.Akbaraliev, 2016-2017 yillarda t.f.d. Z.B.Mingliqulov, 2017-2021 yillarda t.f.d. O.J.Babomuradov, 2021-2022 yillarda t.f.d., prof. B.B.Moʻminovlar mudirlik qildilar. 2022 yilning dekabr oyidan boshlab kafedraga  t.f.d.,dotsent N.O.Raximov mudirlik qilib kelmoqda.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Batafsil</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Axborot texnologiyalarining dasturiy ta’minoti</h2>
+            <p class="animate__animated animate__fadeInUp">   Kafedra faoliyatining asosiy maqsadi axborot texnologiyalarining dasturiy ta’minotini ishlab chiqish borasida yetuk bakalavr hamda magistrlar tayyorlash, o‘quv-uslubiy, ilmiy-tadqiqot, ma’naviy-tarbiyaviy ishlarni olib borishdan iborat.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Batafsil</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+
+   
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>ATDT</h2>
+        <p>Kafedra haqida</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Axborot texnologiyalarining dasturiy ta’minoti kafedrasi o‘z faoliyatini 2005 yil avgust oyida Vazirlar mahkamasining qarori va TATU rektorining shu yilning 17-avgustidagi 147/01 buyrug‘iga asosan ish faoliyatini boshladi.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>2005-2010 yillarda kafedraga t.f.d, akademik, M.M.Kamilov</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>2010-2014 yillarda t.f.d. A.X.Nishanov va f.-m.f.n. A.T.Rahmonov</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>2014-2016 yillarda t.f.d. B.B.Akbaraliev</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>2016-2017 yillarda t.f.d. Z.B.Mingliqulov</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>2017-2021 yillarda t.f.d. O.J.Babomuradov</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>2021-2022 yillarda t.f.d., prof. B.B.Moʻminov</span></li>
+            </ul>
+            <p>
+              2022 yilning dekabr oyidan boshlab kafedraga  t.f.d.,dotsent N.O.Raximov mudirlik qilib kelmoqda
+            </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>Kafedra faoliyatining asosiy maqsadi axborot texnologiyalarining dasturiy ta’minotini ishlab chiqish borasida yetuk bakalavr hamda magistrlar tayyorlash, o‘quv-uslubiy, ilmiy-tadqiqot, ma’naviy-tarbiyaviy ishlarni olib borishdan iborat.
+
+              Ayni vaqtda kafedra “Dasturiy injiniring” fakulteti tarkibida faoliyat ko‘rsatmoqda. </p>
+            <a href="#" class="read-more"><span>Batafsil</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <i class="bi bi-binoculars"></i>
+              <h4 class="d-none d-lg-block">Kafedrada o'qitiladigan fanlar</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-box-seam"></i>
+              <h4 class="d-none d-lg-block">Kafedra professor o‘qituvchilari</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-brightness-high"></i>
+              <h4 class="d-none d-lg-block">Kafedra ilmiy seminarlari</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+              <i class="bi bi-command"></i>
+              <h4 class="d-none d-lg-block">Kafedra professor-o‘qituvchilarining pochta manzili</h4>
+            </a>
+          </li>
+        </ul><!-- End Tab Nav -->
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Kafedrada o'qitiladigan fanlar.</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Dasturiy ta’minot tizimlarini loyixalash</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Dasturlash uslublari va paradigmalar</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Windows Server boshqaruvi</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Dasturiy ta’minot loyixalarini boshqarish</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Dasturiy injiniringga kirish</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Operasion tizimlar</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Dasturiy ta’minot arxitekturasi</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Dasturiy ta’minot sifatini ta’minlash</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Mobil ilovalarini ishlab chiqish</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Linux server boshqaruvi</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Dasturiy vositalarni testlash</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Bilimlarga asoslangan tizimlar</span></li>
+                </ul>
+                <p>
+                  
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/working-1.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Kafedra professor o‘qituvchilari</h3>
+                <p>
+                  
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Raximov Nodir Odilovich – kafedra professori, t.f.d. </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Muxammadieva Dildora Kabilovna – kafedra professori t.f.d., </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Xudayberdiev Mirzaakbar Xakkulmirzaevich – kafedra professori, t.f.d.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ishmuxamedov Aziz Xamidullayevich - kafedra dotsenti, t.f.n.                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Doshanova Malika Yuldashevna - kafedra dotsenti, t.f.f.d.                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Otaxonova Baxrixon Ibragimovna - kafedra dotsenti, t.f.f.d.                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Xidirova Charos Murodilloyevna - kafedra dotsenti, t.f.f.d.                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Saidrasulov Sherzod Norboy o‘g‘li - kafedra dotsenti, t.f.f.d.                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Narziev Nosir Baxshilloevich - kafedra katta oʻqituvchisi                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Xan Igor Viktorovich – kafedra katta oʻqituvchisi                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Raxmonova Munisa Rashodovna - kafedra katta oʻqituvchisi                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Turaqulov Otabek - kafedra katta oʻqituvchisi                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Kuvandikov Jo‘ra Tursunbayevich - kafedra katta oʻqituvchisi                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Egamberdiyev Elyor Hayitmamatovich - kafedra katta oʻqituvchisi                    </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Mirzaeva Nilufar Sirojidinovna - kafedra assistenti                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Achilov Baxodir Saydullayevich - kafedra o‘quv-stajyori                  </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Kalilaev Dauletiyar Baxtiyarovich - kafedra o‘quv-stajyori                </span></li>
+                  
+
+
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/working-2.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Kafedra professor-o‘qituvchilarining uslubiy seminarlari</h3>
+                
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span> </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span> </span></li>
+                  <li><i class="bi bi-check2-all"></i> <span> </span></li>
+                </ul>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/working-3.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Kafedra professor-o‘qituvchilarining pochta manzili</h3>
+                
+                
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Raximov Nodir Odilovich - raximov@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Muxammadieva Dildora Kabilovna - muxammadieva@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Xudayberdiev Mirzaakbar Xakkulmirzaevich - xudayberdiev@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Xan Igor Viktorovich - xan@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Doshanova Malika Yuldashevna - doshanova@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Narziev Nosir Baxshilloevich - narziev@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Raxmonova Munisa Rashodovna - raxmonova@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Аbdurazzoqov Faxriddin Bekpo‘latovich - abdurazzoqov@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Baydullaev Ruslan Tuyliboevich - baydullaev@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Mirzaeva Nilufar Sirojidinovna - nmirzaeva@tuit.uz</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Аtoev Suhrob G‘afurovich - atoev@tuit.uz</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/working-4.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Talabalar</h2>
+        <p>ATDT</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Doktorantura</h3>
+              </a>
+              <p>Doktarantura talabalari monitoring uchun kerakli hujjatlarini yuklashi mumkin.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Magistratura</h3>
+              </a>
+              <p>Magistratura talabalari monitoring uchunkerakli hujjatlarini yuklashi mumkin.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-text" style="color: #20c997;"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Bakalavriat</h3>
+              </a>
+              <p>Bakalavriat talabalari monitoring uchun kerakli hujjatlarini yuklashi mumkin.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Rasmlar</h2>
+        <p>ATDT</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Barchasi</li>
+            <li data-filter=".filter-app">Tadbirlar</li>
+            <li data-filter=".filter-product">Ilmiy seminarlar</li>
+            <li data-filter=".filter-branding">Dars jarayoni</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-1.jpg' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.jpg'%}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-3.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-3.jpg'%}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-4.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-4.jpg'%}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-5.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-5.jpg'%}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-6.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-6.jpg'%}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-7.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-7.jpg'%}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-8.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-8.jpg'%}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-9.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-9.jpg'%}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Jamoa</h2>
+        <p>Bizning jamoa</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 10
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            
+
+            {% for item in users %}
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                {% if item.image %}
+                <img src="{{item.image.url}}" class="testimonial-img" alt="">
+                {% endif %}
+                <h3>{{item.frist_name}} {{item.last_name}}</h3>
+                <h4>{{item.unvon_lavozim}}</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>{{item.shiori}}</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            {% endfor %}
+
+
+
+
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Faxriylar</h2>
+        <p>Bizning faxriylarimiz</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-1.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>M.M.Kamilov</h4>
+                <span>t.f.d, akademik</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-1.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>A.X.Nishanov </h4>
+                <span>t.f.d.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-1.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4> B.B.Akbaraliev</h4>
+                <span>t.f.d.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-1.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4> B.B.Moʻminov</h4>
+                <span>t.f.d.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Recent Posts Section -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Biz bilan bog'lanish</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Manzil</h3>
+                <p>Toshkent 100084, Amir Temur shox ko‘chasi 108 uy</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefon</h3>
+                <p>(+99871) 238-65-07</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@atdt.uz</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Ism" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Mavzu" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Xabar" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Yuborilmoqda</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Xabar yuborildi.</div>
+
+                  <button type="submit">Xabar yuborish</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">ATDT</h3>
+      <p>Muhammad al-Xorazmiy nomidagi Toshkent axborot texnologiyalari universiteti, Dasturiy injiniring fakulteti</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span><a href="https://atdt.uz/">Axborot texnologiyalarining dasturiy ta’minoti</a></span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <a href="https://tuit.uz/">Muhammad al-Xorazmiy nomidagi Toshkent axborot texnologiyalari universiteti</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
